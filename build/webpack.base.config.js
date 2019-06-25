@@ -78,10 +78,6 @@ module.exports = {
     noEmitOnErrors: true,
   },
   plugins: [
-    // 业务代码中使用环境变量
-    new DefinePlugin({
-      'process.env':  process.env.NODE_ENV === 'production' ? config.build.env : config.dev.env
-    }),
     // vue文件解析
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({

@@ -13,7 +13,7 @@
       }
     },
     mounted() {
-      console.log(this.$style);
+      console.log(process.env.NODE_ENV);
     }
   }
 </script>
